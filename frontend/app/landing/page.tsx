@@ -204,13 +204,13 @@ export default function LandingPage() {
             className="flex flex-col sm:flex-row gap-4 mt-14 justify-center md:justify-start"
           >
           <Link href="/signup" passHref legacyBehavior>
-            <a className="min-w-[140px] px-6 py-3 rounded-full text-white font-semibold bg-gradient-to-br from-[#7D2AE7] via-[#3969E7] to-[#07B9CE] hover:shadow-lg shadow-lg hover:scale-105 active:scale-95 transition-transform">
+            <a className="min-w-[140px] px-6 py-3 rounded-full text-white font-semibold bg-gradient-to-br from-[#7D2AE7] via-[#3969E7] to-[#07B9CE] hover:shadow-lg shadow-lg hover:scale-105 active:scale-95 transition-transform flex justify-center items-center text-center">
               Sign Up
             </a>
           </Link>
 
           <Link href="/login" passHref legacyBehavior>
-            <a className="min-w-[140px] px-6 py-3 rounded-full text-white font-semibold bg-gradient-to-br from-[#07B9CE] via-[#3969E7] to-[#7D2AE7] hover:shadow-lg shadow-lg hover:scale-105 active:scale-95 transition-transform">
+            <a className="min-w-[140px] px-6 py-3 rounded-full text-white font-semibold bg-gradient-to-br from-[#07B9CE] via-[#3969E7] to-[#7D2AE7] hover:shadow-lg shadow-lg hover:scale-105 active:scale-95 transition-transform flex justify-center items-center text-center">
               Log In
             </a>
           </Link>
