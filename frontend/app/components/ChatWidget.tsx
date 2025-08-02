@@ -19,7 +19,7 @@ export default function ChatWidget() {
     const updatedMessages = [...messages, userMessage];
     setMessages(updatedMessages);
     setInput('');
-    setLoading(true); // <-- SET LOADING TRUE WHEN SENDING
+    setLoading(true);
 
     try {
       const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/chat`, {
@@ -40,12 +40,13 @@ export default function ChatWidget() {
         { from: 'bot', text: "Sorry, I couldn’t reply right now." }
       ]);
     }
-    setLoading(false); // <-- SET LOADING FALSE AFTER REPLY/ERROR
+    setLoading(false);
   };
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
-      if (chatRef.current && !(chatRef.current as any).contains(e.target)) {
+      // FIXED: type-safe, no `as any`
+      if (chatRef.current && !chatRef.current.contains(e.target as Node)) {
         setOpen(false);
       }
     };
