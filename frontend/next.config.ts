@@ -1,9 +1,18 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  env: {
-    BACKEND_URL: "http://localhost:8000", 
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/landing',
+        permanent: true, // 308 redirect
+      },
+    ];
   },
-};
+}
+
+module.exports = nextConfig;
 
 export default nextConfig;
