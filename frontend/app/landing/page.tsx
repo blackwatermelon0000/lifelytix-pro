@@ -265,11 +265,11 @@ export default function LandingPage() {
     }}
   />
   {/* Main Card */}
-  <div className="relative z-10 bg-white/20 dark:bg-[#0c1020]/80 backdrop-blur-lg rounded-3xl border border-white/10 shadow-2xl px-7 md:px-16 py-12 max-w-3xl w-full flex flex-col items-center">
+  <div className="relative z-10 bg-gradient-to-br from-[#090e1a]/90 via-[#090e1a]/95 to-[#090e1a] backdrop-blur-md rounded-3xl border border-white/10 shadow-2xl px-7 md:px-16 py-12 max-w-3xl w-full flex flex-col items-center">
     <h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#7D2AE7] via-[#5248e3] to-[#1f57e5] text-center mb-5 tracking-tight">
       About LifeLytix
     </h2>
-    <p className="text-lg text-gray-600 leading-relaxed text-center font-medium drop-shadow-md">
+    <p className="text-lg text-gray-400 leading-relaxed text-center font-medium drop-shadow-md">
       LifeLytix isn’t just another health app, it’s your daily companion for living, feeling, and thriving with intention.
       <br /><br />
       I started LifeLytix because I was tired of being told our health was just a number, a chart, or a step count.
